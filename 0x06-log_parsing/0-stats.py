@@ -4,7 +4,7 @@ script that reads stdin line by line and computes metrics
 """
 
 
-from  sys import stdin
+from sys import stdin
 
 status = {'200': 0, '301': 0,
           '400': 0, '401': 0,
