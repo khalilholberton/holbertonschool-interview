@@ -10,8 +10,7 @@ def canUnlockAll(boxes):
     """
     try:
         ky = boxes[0]
-        f_level = range(1, len(boxes))
-        for count in f_level:
+        for count in range(1, len(boxes)):
             if count in ky:
                 ky = ky + boxes[count]
         try:
@@ -22,8 +21,8 @@ def canUnlockAll(boxes):
                     x = 1
         except Exception:
             pass
-        s_level = range(1, len(boxes)-1)
-        for count in s_level:
+
+        for count in ange(1, len(boxes)-1):
             if count not in ky:
                 x = 0
         if x == 1:
