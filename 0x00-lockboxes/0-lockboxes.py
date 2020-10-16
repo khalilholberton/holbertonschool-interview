@@ -17,12 +17,11 @@ def canUnlockAll(boxes):
             for count in range(1, len(boxes)):
                 if count in ky:
                     ky = ky + boxes[count]
-                    list(set(ky))
-                    x = 1
         except Exception:
             pass
-
-        for count in ange(1, len(boxes)-1):
+        list(set(ky))
+        x = 1
+        for count in range(1, len(boxes)-1):
             if count not in ky:
                 x = 0
         if x == 1:
