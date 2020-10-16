@@ -56,14 +56,9 @@ return (do_bob(bob, (int)len));
  */
 char *do_bob(char *bob, int ln)
 {
-char *x;
-char *y;
-char *n;
-char *t;
-int sz;
-int fg;
-int nums;
-
+char *x, *y;
+char *n, *t;
+int sz, fg, nums;
 sz = (ln + 1) * (ln / 3) + 1;
 y = malloc(sizeof(char) * sz);
 x = malloc(sizeof(char) * sz);
@@ -134,7 +129,6 @@ e++;
 }
 return (e);
 }
-
 /**
  * unite - concatenation
  * @x: string
@@ -148,7 +142,7 @@ int cap;
 int count;
 int a;
 char *bob;
-cap = ((len + 1) * len) + 1;
+cap = ((len + 1) * len) +1;
 bob = malloc(sizeof(char) * cap);
 a = 0;
 count = 0;
