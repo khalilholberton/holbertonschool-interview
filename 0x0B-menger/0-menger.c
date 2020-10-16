@@ -57,7 +57,7 @@ return (do_bob(bob, (int)len));
 char *do_bob(char *bob, int ln)
 {
 char *x;
-char*y;
+char *y;
 char *n;
 char *t;
 int sz;
@@ -148,7 +148,6 @@ int cap;
 int count;
 int a;
 char *bob;
-
 cap = ((len + 1) * len) + 1;
 bob = malloc(sizeof(char) * cap);
 a = 0;
