@@ -69,7 +69,8 @@ rt = binary_tree_node(adr, value);
 if (!adr->left)
 {
 adr->left = rt;
-} else
+}
+else
 {
 adr->right = rt;
 }
