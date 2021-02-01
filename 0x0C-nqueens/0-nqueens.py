@@ -14,9 +14,7 @@ def isOk(tab, r, z):
     """
     try:
         for y in range(r):
-            if tab[y] == z or tab[y] + r - y == z:
-                return False
-            if tab[y] + y - r == z:
+            if tab[y] == z or tab[y] + r - y == z or tab[y] + y - r == z:
                 return False
         return True
     except:
