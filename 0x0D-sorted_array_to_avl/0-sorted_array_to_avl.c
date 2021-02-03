@@ -10,10 +10,11 @@
 avl_t *sorted_array_to_avl(int *array, size_t size)
 {
 	avl_t *head;
+
 	head = NULL;
 
 	head = add(&head, size - 1, 0, array);
-	return head;
+	return (head);
 }
 
 
@@ -26,6 +27,7 @@ avl_t *sorted_array_to_avl(int *array, size_t size)
 avl_t *create(avl_t *parent, int data)
 {
 	avl_t *node;
+
 	node = NULL;
 
 	node = malloc(sizeof(avl_t));
@@ -38,7 +40,7 @@ avl_t *create(avl_t *parent, int data)
 	node->parent = parent;
 	node->right = NULL;
 	node->left = NULL;
-	return node;
+	return (node);
 }
 /**
  * add - add a new node
@@ -52,6 +54,7 @@ avl_t *add(avl_t **head, int finish, int begin, int *array)
 {
 	int center;
 	avl_t *newNode;
+
 	newNode = NULL;
 
 	if (begin > finish)
@@ -68,5 +71,5 @@ avl_t *add(avl_t **head, int finish, int begin, int *array)
 	{
 		newNode->right = add(&newNode, finish, center + 1, array);
 	}
-	return newNode;
+	return (newNode);
 }
